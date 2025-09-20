@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Lahun---Sector/static/css/main.6f67e3f1.css",
-    "main.js": "/Lahun---Sector/static/js/main.e3b4f268.js",
-    "index.html": "/Lahun---Sector/index.html",
-    "main.6f67e3f1.css.map": "/Lahun---Sector/static/css/main.6f67e3f1.css.map",
-    "main.e3b4f268.js.map": "/Lahun---Sector/static/js/main.e3b4f268.js.map"
+    "main.css": "./static/css/main.6f67e3f1.css",
+    "main.js": "./static/js/main.628cd9de.js",
+    "index.html": "./index.html",
+    "main.6f67e3f1.css.map": "./static/css/main.6f67e3f1.css.map",
+    "main.628cd9de.js.map": "./static/js/main.628cd9de.js.map"
   },
   "entrypoints": [
     "static/css/main.6f67e3f1.css",
-    "static/js/main.e3b4f268.js"
+    "static/js/main.628cd9de.js"
   ]
 }
