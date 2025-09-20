@@ -1,0 +1,151 @@
+:root {
+  --bg: #000000;
+  --gold1: #ffd54a;
+  --gold2: #e6b800;
+  --gold-dark: #b38300;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, "Noto Naskh Arabic", sans-serif;
+  direction: rtl;
+}
+
+.app-root {
+  min-height: 100%;
+  background: var(--bg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo-img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-title {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #fff7d6, #ffd54a 30%, #e6b800 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+}
+
+.main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.pdf-wrapper {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.pdf-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.slider-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 70%;
+  max-width: 720px;
+}
+
+.page-slider {
+  width: 100%;
+}
+
+.page-indicator {
+  min-width: 110px;
+  text-align: center;
+  color: #ddd;
+}
+
+.pdf-viewer {
+  background: rgba(0,0,0,0.4);
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.pdf-viewer canvas {
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.8);
+}
+
+.section-buttons {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-btn {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 160px;
+  text-align: center;
+  transition: all 180ms ease;
+  background: linear-gradient(180deg, var(--gold1), var(--gold2));
+  color: #2b1900;
+  box-shadow: 0 6px 18px rgba(230,180,50,0.12), inset 0 -3px 0 rgba(0,0,0,0.06);
+}
+
+.section-btn.active {
+  background: #000;
+  color: var(--gold1);
+  border: 2px solid var(--gold1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6), 0 0 10px rgba(230,180,50,0.08);
+}
+
+.section-btn:hover { transform: translateY(-3px); }
+
+@media (max-width: 720px) {
+  .brand-title { font-size: 20px; }
+  .logo-img { height: 48px; }
+  .section-btn { min-width: 140px; padding: 10px 12px; font-size: 14px; }
+  .pdf-wrapper { padding: 0 12px; }
+}
