@@ -1,21 +1,27 @@
 {
-  "name": "lahun-booklet",
+  "name": "lahun-sector",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://beshotharwat384-oss.github.io/Lahun---Sector",
   "dependencies": {
+    "@react-pdf-viewer/core": "^3.12.0",
+    "@react-pdf-viewer/default-layout": "^3.12.0",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-pdf": "^7.7.1",
-    "react-scripts": "5.0.1",
-    "react-swipeable": "^7.0.0",
-    "pdfjs-dist": "^3.11.174"
+    "react-pdf": "^10.1.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
